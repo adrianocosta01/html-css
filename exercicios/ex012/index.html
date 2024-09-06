@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+        <!--O navegador var tentar reproduzir na ordem de cima para baixo se um formato não funcionar ele passa pro proximo e se nenhum funcionar ele mostra a mensgem / <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+
+        Vídeos hospedados dessa maneira podem e vão consumir muito tráfego de dados (muito cuidado com isso) de Vídeos em hospedagem própria
+
+        Você pode usar serviços de incorporação de vídeos externos como o YouTube ou o Vimeo.-->
+
+        <h1>Inserindo vídeos do YouTube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=98PfowN-o8Ane-t3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        <!--formato m4v é o mais recomendavel de se usar-->
+
+        <h1>Inserindo vídeos do Vimeo</h1>
+
+        <iframe src="https://player.vimeo.com/video/197093965?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+</body>
+</html>
