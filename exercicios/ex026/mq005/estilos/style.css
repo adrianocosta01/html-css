@@ -21,7 +21,7 @@ header > h1 {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
@@ -36,6 +36,20 @@ menu > ul > li > a {
     color: white;
     text-align: center;
     border-top: 2px solid gray;
+}
+
+span#burger {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+span#burger:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 menu > ul > li > a:hover {
